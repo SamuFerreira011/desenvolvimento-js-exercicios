@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #numero {
+      font-size: 80px;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 10px 30px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="numero">0</p>
+  <button id="btn">Clique aqui</button>
+
+  <script>
+    let contador = 0;
+
+    document.getElementById("btn").addEventListener("click", function() {
+      contador = contador + 1;
+      document.getElementById("numero").innerText = contador;
+    });
+  </script>
+
+</body>
+</html>
