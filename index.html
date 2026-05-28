@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modo Claro/Escuro 👻</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div id="caixa">
-        <h1 id="titulo">Troca de Tema</h1>
-        <!-- h2 class="novoTitulo">Aqui temos um outro título</h2! -->
-        <p id="texto">Clique no botão para mudar entre modo claro e modo escuro.</p>
-        <button id="botaoTema">Ativar modo escuro</button>
-    </div>
+  <div id="caixa">
+    <h1 id="titulo">Lista de Tarefas</h1>
 
-    <script src="scripts/script.js"></script>
+    <input type="text" id="campo-tarefa" placeholder="Digite uma tarefa...">
+    <p id="aviso">⚠️ Por favor, digite uma tarefa antes de adicionar.</p>
+
+    <button id="botao-adicionar">➕ Adicionar tarefa</button>
+    <button id="botao-limpar">🗑️ Limpar tudo</button>
+
+    <p id="contador">Total de tarefas: 0</p>
+
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
