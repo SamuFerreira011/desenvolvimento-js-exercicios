@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div id="caixa">
-    <h1 id="titulo">Lista de Tarefas</h1>
-
-    <input type="text" id="campo-tarefa" placeholder="Digite uma tarefa...">
-    <p id="aviso">⚠️ Por favor, digite uma tarefa antes de adicionar.</p>
-
-    <button id="botao-adicionar">➕ Adicionar tarefa</button>
-    <button id="botao-limpar">🗑️ Limpar tudo</button>
-
-    <p id="contador">Total de tarefas: 0</p>
-
-    <ul id="lista"></ul>
-  </div>
-
-  <script src="scripts/script.js"></script>
+    <h1>Catálogo de Produtos</h1>
+    <div class="filtros">
+        <input type="text" id="campoBusca" placeholder="Digite para buscar um produto">
+        <select id="ordenacao">
+            <option value="nome-az">Nome (A-Z)</option>
+            <option value="nome-za">Nome (Z-A)</option>
+            <option value="preco-menor">Menor Preço</option>
+            <option value="preco-maior">Maior Preço</option>
+        </select>
+    </div>
+    <div id="listaProdutos" class="lista-produtos"></div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
